@@ -301,7 +301,7 @@ worth = st.slider("", 20000, 1000000, step=10000)
 import pandas as pd
 import pickle
 
-with open('Machine Learning Algorithms/Linear Regression/Car_Price_Prediction.pkl', 'rb') as f:
+with open('Car_Price_Prediction.pkl', 'rb') as f:
     loaded_pipeline = pickle.load(f)
 
 if type(age) is not int:
