@@ -215,7 +215,7 @@ else:
 
 annual_salary = st.slider("", 20000, 100000, step=1000)
 
-if st.sidebar.checkbox("Credit Card Dept"):
+if st.sidebar.checkbox("Credit Card Debt"):
     st.markdown("""
         <style>
         .title1 {
@@ -227,7 +227,7 @@ if st.sidebar.checkbox("Credit Card Dept"):
         }
         </style>
         """, unsafe_allow_html=True)
-    st.markdown('<div class="title1">Select your Credit Card Dept:</div>', unsafe_allow_html=True)
+    st.markdown('<div class="title1">Select your Credit Card Debt:</div>', unsafe_allow_html=True)
     st.sidebar.success("You must indicate the total debt of your credit cards.")
 else:
     st.markdown("""
@@ -252,7 +252,7 @@ else:
     </style>
     """, unsafe_allow_html=True)
 
-    st.markdown('<div class="title">Select your Credit Card Dept:</div>', unsafe_allow_html=True)
+    st.markdown('<div class="title">Select your Credit Card Debt:</div>', unsafe_allow_html=True)
 
 dept = st.slider("", 100, 20000, step=100)
 
