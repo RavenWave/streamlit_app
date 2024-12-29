@@ -299,10 +299,10 @@ worth = st.slider("", 20000, 1000000, step=10000)
 
 
 import pandas as pd
-import pickle
+import joblib
 
 with open('Car_Price_Prediction.pkl', 'rb') as f:
-    loaded_pipeline = pickle.load(f)
+    loaded_pipeline = joblib.load(f)
 
 if type(age) is not int:
     age = 1
